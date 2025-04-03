@@ -134,6 +134,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/xiaomi/miatoll/proprietary/vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
@@ -359,6 +360,7 @@ PRODUCT_PACKAGES += \
     libadreno_app_profiles \
     libadreno_utils \
     libc2d30_bltlib \
+    libdapparamstorage-v34_cancunf \
     libdiag \
     libdsutils \
     libgpudataproducer \
@@ -384,8 +386,10 @@ PRODUCT_PACKAGES += \
     libqmi_legacy \
     libqmiservices \
     libqsocket \
+    libstagefright_foundation-v34_cancunf \
     libwfddisplayconfig_proprietary \
     libwfdhdcpcp \
+    vendor.dolby.hardware.dms@2.0-v34_cancunf \
     vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     btaudio_offload_if \
     audio.bluetooth_qti.default \
@@ -618,6 +622,9 @@ PRODUCT_PACKAGES += \
     libcne \
     libcneapiclient \
     libcneoplookup \
+    libcodec2_soft_ac4dec \
+    libcodec2_soft_ddpdec \
+    libcodec2_store_dolby \
     libcom.qti.chinodeutils \
     libconfigdb \
     libcpion \
@@ -625,6 +632,7 @@ PRODUCT_PACKAGES += \
     libcvp_common \
     libcvp_stub \
     libdataitems \
+    libdeccfg \
     libdisp-aba \
     libdisplayqos \
     libdng_sdk2vendor \
@@ -928,6 +936,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-qti \
     qcrild \
     vendor.display.color@1.0-service \
+    vendor.dolby.media.c2@1.0-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.media.c2@1.0-service \

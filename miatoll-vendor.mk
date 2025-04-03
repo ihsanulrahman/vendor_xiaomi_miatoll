@@ -134,6 +134,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/xiaomi/miatoll/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
     vendor/xiaomi/miatoll/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
@@ -361,6 +362,7 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libc2d30_bltlib \
     libdapparamstorage-v34_cancunf \
+    libdapparamstorage \
     libdiag \
     libdsutils \
     libgpudataproducer \
@@ -386,10 +388,14 @@ PRODUCT_PACKAGES += \
     libqmi_legacy \
     libqmiservices \
     libqsocket \
+    libstagefright_foundation-v32_rhode \
     libstagefright_foundation-v34_cancunf \
     libwfddisplayconfig_proprietary \
     libwfdhdcpcp \
+    libswdap \
+    libswgamedap \
     vendor.dolby.hardware.dms@2.0-v34_cancunf \
+    vendor.dolby.hardware.dms@2.0 \
     vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     btaudio_offload_if \
     audio.bluetooth_qti.default \
@@ -635,6 +641,7 @@ PRODUCT_PACKAGES += \
     libdeccfg \
     libdisp-aba \
     libdisplayqos \
+    libdlbdsservice \
     libdng_sdk2vendor \
     libdpmqmihal \
     libdpps \
@@ -759,6 +766,7 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.2 \
     vendor.display.color@1.3 \
     vendor.display.postproc@1.0 \
+    vendor.dolby.hardware.dms@2.0-impl \
     vendor.qti.data.factory@2.0 \
     vendor.qti.data.factory@2.1 \
     vendor.qti.data.factory@2.2 \
@@ -936,6 +944,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-qti \
     qcrild \
     vendor.display.color@1.0-service \
+    vendor.dolby.hardware.dms@2.0-service \
     vendor.dolby.media.c2@1.0-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
